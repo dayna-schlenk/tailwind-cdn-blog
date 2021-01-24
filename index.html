@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tailwind-CDN Blog</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Tailwind CDN -->
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+            integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <!-- Navigation Menu -->
+        <nav class="flex items-center justify-between flex-wrap bg-purple-200 p-6 w-full fixed z-10 top-0">
+            <div class="flex items-center flex-shrink-0 text-white mr-6 text-purple-600 hover:text-purple-400 cursor-pointer">
+                <a class="text-2xl" href="#">
+                    <i class="fas fa-code"></i>
+                </a>
+                <p class="ml-2 font-bold text-xl">DaynaDev</p>
+            </div>
+        
+            <div class="block md:hidden">
+                <button id="nav-toggle"
+                    class="flex items-center px-3 py-2 border-2 rounded text-purple-600 border-purple-600 hover:text-purple-400 hover:border-purple-400">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+        
+            <div class="w-full flex-grow md:flex md:items-center md:w-auto hidden md:block pt-6 md:pt-0" id="nav-content">
+                <ul class="list-reset md:flex justify-end flex-1 items-center font-semibold">
+                    <li class="mr-3">
+                        <a class="inline-block text-purple-500 no-underline hover:text-purple-300 hover:text-underline py-2 px-4"
+                            href="#">About Me</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-purple-500 no-underline hover:text-purple-300 hover:text-underline py-2 px-4"
+                            href="#">All Posts</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-purple-500 no-underline hover:text-purple-300 hover:text-underline py-2 px-4"
+                            href="#">Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Hero -->
+        <div class="hero-img bg-fixed">
+            <div class="hero-text mt-4">
+                <h1 class="text-3xl font-bold mb-5">DaynaDevelops</h1>
+                <h3 class="text-lg font-medium">A blog about my self-taught coding journey.</h3>
+            </div>
+        </div>
+
+        <!-- Latest Posts -->
+        <h2 class="my-10 text-center text-2xl font-bold text-purple-900">Latest Posts</h2>
+        
+        <div class="all-posts font-semibold md:grid md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2">
+            <div class="post-card flex flex-col px-7 mb-14">
+                <img class="rounded-t-md"
+                    src="https://images.unsplash.com/photo-1544819667-9bfc1de23d4e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    alt="writing goals in bullet journal">
+                <a class="bg-purple-500 hover:bg-purple-600 py-4 text-center text-purple-200 rounded-b-md transition ease-in duration-150"
+                    href="https://github.com/dayna-schlenk" target="_blank">Discipline Over Motivation</a>
+            </div>
+        
+            <div class="post-card flex flex-col px-7 mb-14">
+                <img class="rounded-t-md"
+                    src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    alt="person writing on paper">
+                <a class="bg-purple-500 hover:bg-purple-600 py-4 text-center text-purple-200 rounded-b-md transition ease-in duration-150"
+                    href="https://github.com/dayna-schlenk" target="_blank">How I Organize</a>
+            </div>
+        
+            <div class="post-card flex flex-col px-7 mb-14">
+                <img class="rounded-t-md"
+                    src="https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
+                    alt="mug with begin written on it">
+                <a class="bg-purple-500 hover:bg-purple-600 py-4 text-center text-purple-200 rounded-b-md transition ease-in duration-150"
+                    href="https://github.com/dayna-schlenk" target="_blank">Learning How to Learn</a>
+            </div>
+        
+            <div class="post-card flex flex-col px-7 mb-14">
+                <img class="rounded-t-md"
+                    src="https://images.unsplash.com/photo-1561736778-92e52a7769ef?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    alt="desk space for coding">
+                <a class="bg-purple-500 hover:bg-purple-600 py-4 text-center text-purple-200 rounded-b-md transition ease-in duration-150"
+                    href="https://github.com/dayna-schlenk" target="_blank">Tackling JavaScript</a>
+            </div>
+        
+            <div class="post-card flex flex-col px-7 mb-14">
+                <img class="rounded-t-md"
+                    src="https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    alt="desk and chair with computer">
+                <a class="bg-purple-500 hover:bg-purple-600 py-4 text-center text-purple-200 rounded-b-md transition ease-in duration-150"
+                    href="https://github.com/dayna-schlenk" target="_blank">January Resources</a>
+            </div>
+        
+            <div class="post-card flex flex-col px-7 mb-14">
+                <img class="rounded-t-md"
+                    src="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    alt="long road in the fall">
+                <a class="bg-purple-500 hover:bg-purple-600 py-4 text-center text-purple-200 rounded-b-md transition ease-in duration-150"
+                    href="https://github.com/dayna-schlenk" target="_blank">Coding Journeys</a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-purple-900 bg-purple-300 p-4 flex flex-col">
+        
+            <p class="text-sm self-center md:text-base">Made with ❤ by Dayna Schlenker</p>
+            <p class="text-sm self-center md:text-base">© 2021</p>
+        
+            <!--  Social Icons  -->
+            <div class="socials text-3xl pt-4 flex justify-around md:text-4xl md:justify-center md:space-x-20">
+        
+                <a href="https://twitter.com/daschl2" target="_blank"><i
+                        class="fab fa-twitter hover:text-purple-600 transition ease-in duration-150"></i></a>
+        
+                <a href="https://github.com/dayna-schlenk" target="_blank"><i
+                        class="fab fa-github hover:text-purple-600 transition ease-in duration-150"></i></a>
+        
+                <a href="https://www.linkedin.com/in/dayna-schlenker-4b331212b/" target="_blank"><i
+                        class="fab fa-linkedin hover:text-purple-600 transition ease-in duration-150"></i></a>
+        
+            </div>
+        </footer>
+
+        <script src="scripts/app.js" async defer></script>
+    </body>
+</html>
